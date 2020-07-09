@@ -1,0 +1,6 @@
+{
+	"name": "linter",
+	"dependencies": {
+		"eslint": "^7.4.0"
+	}
+}

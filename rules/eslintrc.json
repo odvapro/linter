@@ -1,0 +1,9 @@
+{
+	"rules": {
+		"semi": "error",
+        "indent": ["error", "tab"],
+        "no-mixed-spaces-and-tabs": ["error"],
+        "brace-style": ["error", "allman"],
+        "no-trailing-spaces": ["error", { "skipBlankLines": true }]
+    }
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<ruleset name="MyStandard">
+
+	<arg name="tab-width" value="4"/>
+
+	<!-- запретить отступы пробелами -->
+	<rule ref="Generic.WhiteSpace.DisallowSpaceIndent"/>
+
+	<!-- проверка правильности отступов -->
+	<rule ref="Generic.WhiteSpace.ScopeIndent">
+		<properties>
+			<property name="tabIndent" value="true" />
+		</properties>
+	</rule>
+
+	<!-- фигурные скобки на новой строке -->
+	<rule ref="Generic.Functions.OpeningFunctionBraceBsdAllman"></rule>
+
+	<!-- проверка синтаксиса -->
+	<rule ref="Generic.PHP.Syntax"></rule>
+
+	<!-- trailing spaces -->
+	<rule ref="Squiz.WhiteSpace.SuperfluousWhitespace"></rule>
+
+</ruleset>
