@@ -1,6 +1,6 @@
 # Набор правил для Sublime Text 3 для проверки CodeStyle
 
-_Сам CodeStyle находится тут https://paper.dropbox.com/doc/PHP-Code-style-O2--A3bZ7VMEHV~MA1olns_JgoP~Ag-jH0lKdUCL1sFjhFFAweRd_
+_Сам CodeStyle находится тут https://www.notion.so/odva/PHP-Code-style-O-b84dcd527e3f46b895d0c9cba3f5cb21_
 
 _**Внимание! В системе должна быть установлена `nodejs`**_
 

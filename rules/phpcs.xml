@@ -5,6 +5,8 @@
 
 	<!-- запретить отступы пробелами -->
 	<rule ref="Generic.WhiteSpace.DisallowSpaceIndent"/>
+	<!-- запретить синтаксис с array -->
+	<rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
 
 	<!-- проверка правильности отступов -->
 	<rule ref="Generic.WhiteSpace.ScopeIndent">
@@ -12,6 +14,33 @@
 			<property name="tabIndent" value="true" />
 		</properties>
 	</rule>
+
+	<!-- Ban some functions -->
+    <rule ref="Generic.PHP.ForbiddenFunctions">
+        <properties>
+            <property name="forbiddenFunctions" type="array">
+                <element key="sizeof" value="count"/>
+                <element key="delete" value="unset"/>
+                <element key="print" value="echo"/>
+                <element key="is_null" value="null"/>
+                <element key="create_function" value="null"/>
+            </property>
+        </properties>
+    </rule>
+
+    <!-- нельзя писать в верхнем регистре true false -->
+    <rule ref="Generic.PHP.LowerCaseConstant"/>
+    <!-- нельзя использовать <? -->
+    <rule ref="Generic.PHP.DisallowShortOpenTag"/>
+
+    <!-- Lines can be 120 chars long, but never show errors -->
+    <rule ref="Generic.Files.LineLength">
+        <properties>
+            <property name="lineLimit" value="120"/>
+            <property name="absoluteLineLimit" value="0"/>
+        </properties>
+    </rule>
+    <rule ref="PSR2.Files.EndFileNewline"/>
 
 	<!-- фигурные скобки на новой строке -->
 	<rule ref="Generic.Functions.OpeningFunctionBraceBsdAllman"></rule>
