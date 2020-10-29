@@ -50,7 +50,7 @@ SublimeLinter привязывает к комбинации клавиш `ctrl+
 Настройки горячих клавиш находятся тут Sublime Text > Preferences > Package Settings > SublimeLinter > Key Bindings
 ## Установка на PhpStorm или WebStorm
  - склонировать проект, желательно в домашнюю директорию
- - В IDE нажать сочетание клавиш ctr+shift+s
+ - В IDE нажать сочетание клавиш `ctr+shift+s`
  - Перейти в Editor->Code Style
  - Выбрать рядом с темой шестеренку
  - Нажать импортировать тему , выбрать в склонированном проекте файл CodeStyleO2.xml
