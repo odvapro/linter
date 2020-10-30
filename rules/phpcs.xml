@@ -31,7 +31,12 @@
     <!-- нельзя писать в верхнем регистре true false -->
     <rule ref="Generic.PHP.LowerCaseConstant"/>
     <!-- нельзя использовать <? -->
+
     <rule ref="Generic.PHP.DisallowShortOpenTag"/>
+    <rule ref="Generic.PHP.DisallowShortOpenTag.EchoFound">
+        <severity>0</severity>
+    </rule>
+    <!-- <rule ref="Generic.PHP.DisallowShortOpenTag.EchoFound"> -->
 
     <!-- Lines can be 120 chars long, but never show errors -->
     <rule ref="Generic.Files.LineLength">
