@@ -1,11 +1,21 @@
 {
    	"env": { "es6": true },
 	"rules": {
-		"semi": "error",
+		"semi": ["error", "always"],
         "indent": ["error", "tab"],
         "no-mixed-spaces-and-tabs": ["error"],
         "brace-style": ["error", "allman"],
         "no-trailing-spaces": ["error", { "skipBlankLines": true }],
         "prettier/prettier": 0
+    },
+    "parserOptions": {
+    	"ecmaVersion": 8,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true,
+            "modules": true,
+            "experimentalObjectRestSpread": true,
+            "globalReturn": true
+        }
     }
 }
