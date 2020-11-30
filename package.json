@@ -2,5 +2,8 @@
 	"name": "linter",
 	"dependencies": {
 		"eslint": "^7.4.0"
+	},
+	"devDependencies": {
+		"babel-eslint": "^10.1.0"
 	}
 }
